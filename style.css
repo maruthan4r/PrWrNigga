@@ -1,0 +1,14 @@
+@font-face {
+    font-family: sfbold;
+    src: url(fonts/sfbold.otf) format("opentype");
+}
+@font-face {
+    font-family: sfregular;
+    src: url(fonts/sfregular.otf) format("opentype");
+}
+
+html{
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+}
