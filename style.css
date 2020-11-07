@@ -3,39 +3,36 @@
     src: url(fonts/sfbold.otf) format("opentype");
 }
 
-/*Initialisiert die Schriftarte für website*/
+/**Initialisiert die Schriftarte für website*/
 
 @font-face {
     font-family: sfregular;
     src: url(fonts/sfregular.otf) format("opentype");
 }
 
-/* Standard-Sache festsetzte demits nachher kei Problem git */
-html{
-    font-family: sfregular;
-}
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color: rgb(1, 0, 34);
-}
+/* set Defaults */
 
-nav a{
-    display: flex;
-    height: max-content;
-    background-color: black;
-    color: white
-}
 
-nav a:hover{
-    transition-duration: 0.3ms;
-    background-color: teal;
-    color: black;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
 
-}
 
+
+/*set classes*/
 .titel{
     color: rgb(214, 208, 230);
     text-transform: uppercase;
@@ -49,6 +46,9 @@ nav a:hover{
     width: 50%;
 }
 
+
+
+/**
 .links li{
     list-style: none;
 }
@@ -60,3 +60,4 @@ nav a:hover{
     font-weight: bold;
     font-size: 14px;
 }
+*/
