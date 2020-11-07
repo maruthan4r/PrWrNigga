@@ -15,7 +15,7 @@
 
 ul {
 
-    margin-left: 100px;
+    width: max-content;
     list-style-type: none;
     margin: 0;
     padding: 0;
