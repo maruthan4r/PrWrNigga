@@ -12,13 +12,23 @@
 
 /* Standard-Sache festsetzte demits nachher kei Problem git */
 
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color: rgb(1, 0, 34);
-}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+
 
 .titel{
     color: rgb(214, 208, 230);
@@ -32,7 +42,7 @@ nav{
     justify-content: space-around;
     width: 50%;
 }
-
+/**
 .links li{
     list-style: none;
 }
@@ -44,3 +54,4 @@ nav{
     font-weight: bold;
     font-size: 14px;
 }
+*/
