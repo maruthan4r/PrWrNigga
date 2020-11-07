@@ -23,7 +23,8 @@ nav{
 }
 
 nav a{
-    display: block;
+    display: flex;
+    height: max-content;
     background-color: black;
     color: white
 }
