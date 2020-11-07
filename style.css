@@ -23,3 +23,58 @@ h1{
     font-family: sfbold;
     text-align: center;
 }
+
+#zeitleiste {
+    position: relative;
+    margin-left: 7.5em;
+    list-style-type: none;
+  }	
+  
+  #zeitleiste::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    top: 0;
+    background: #3983ab;
+    width: 0.4em;
+  }
+  
+  #zeitleiste::after {
+    position: absolute;
+    content: "";
+    bottom: -1.3em;
+    left: -0.8em;
+    width: 0;
+    height: 0;
+    border-width: 1em;
+    border-style: solid;
+    border-color: #3983ab transparent transparent transparent;
+  }
+  
+  #zeitleiste >li::before{
+    position: absolute;
+    content: "";
+    width: 1em;
+    height: 1em;
+    left: -0.5em;  
+    border-radius: 50%;
+    border: 0.2em solid #3983ab;
+    background: #dfac20;
+  } 
+  
+  #zeitleiste >li {
+    margin-bottom: 3em;
+  }
+  
+  li h3 {
+    margin: -1em 0 0.2em;
+  }
+  
+  time {
+      display: block;
+      font-weight: bold;
+      margin-left: -10em;
+      width: 6.5em;
+      text-align:right;
+  }
