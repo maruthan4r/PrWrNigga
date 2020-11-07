@@ -3,7 +3,7 @@
     src: url(fonts/sfbold.otf) format("opentype");
 }
 
-/**Initialisiert die Schriftarte für website*/
+/*Initialisiert die Schriftarte für website*/
 
 @font-face {
     font-family: sfregular;
@@ -11,7 +11,9 @@
 }
 
 /* Standard-Sache festsetzte demits nachher kei Problem git */
-
+html{
+    font-family: sfbold;
+}
 nav{
     display: flex;
     justify-content: space-around;
@@ -19,6 +21,8 @@ nav{
     min-height: 8vh;
     background-color: rgb(1, 0, 34);
 }
+
+nav a{}
 
 .titel{
     color: rgb(214, 208, 230);
