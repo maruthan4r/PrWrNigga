@@ -23,6 +23,7 @@ nav{
 }
 
 nav a{
+    display: block;
     background-color: black;
     color: white
 }
