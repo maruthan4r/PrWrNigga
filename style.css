@@ -10,9 +10,16 @@
     src: url(fonts/sfregular.otf) format("opentype");
 }
 
+/*SET DEFAULTS MAN*/
 html{
     background-color:#539493;
     font-family: sfregular;
     font-size: 12px;
     color: white;
+}
+
+h1{
+    font-size: 48px;
+    font-family: sfbold;
+    text-align: center;
 }
