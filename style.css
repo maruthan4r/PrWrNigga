@@ -3,7 +3,7 @@
     src: url(fonts/sfbold.otf) format("opentype");
 }
 
-/**Initialisiert die Schriftarte für website*/
+/*Initialisiert die Schriftarte für website*/
 
 @font-face {
     font-family: sfregular;
@@ -11,22 +11,29 @@
 }
 
 /* Standard-Sache festsetzte demits nachher kei Problem git */
-#Einleitung{
-    color: white;
+html{
+    font-family: sfregular;
 }
-
-#zeitstrahl{
-    display: flex;
-    justify-content: center;
-    color:white;
-}
-
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
     background-color: rgb(1, 0, 34);
+}
+
+nav a{
+    display: flex;
+    height: max-content;
+    background-color: black;
+    color: white
+}
+
+nav a:hover{
+    transition-duration: 0.3ms;
+    background-color: teal;
+    color: black;
+
 }
 
 .titel{
