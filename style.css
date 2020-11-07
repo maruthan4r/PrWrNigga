@@ -12,7 +12,7 @@
 
 /* Standard-Sache festsetzte demits nachher kei Problem git */
 html{
-    font-family: sfbold;
+    font-family: sfregular;
 }
 nav{
     display: flex;
@@ -22,7 +22,17 @@ nav{
     background-color: rgb(1, 0, 34);
 }
 
-nav a{}
+nav a{
+    background-color: black;
+    color: white
+}
+
+nav a:hover{
+    transition-duration: 0.3ms;
+    background-color: teal;
+    color: black;
+
+}
 
 .titel{
     color: rgb(214, 208, 230);
