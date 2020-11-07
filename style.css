@@ -21,13 +21,13 @@ ul {
   }
   
   li {
-    float: left;
+    float: center;
   }
   
   li a {
     display: block;
     padding: 8px;
-    background-color: #dddddd;
+    background-color: black;
   }
 
 
