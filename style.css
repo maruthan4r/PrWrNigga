@@ -7,8 +7,37 @@
     src: url(fonts/sfregular.otf) format("opentype");
 }
 
-html{
-    background-color: black;
-    color: white;
-    scroll-behavior: smooth;
+/* Standard-Sache festsetzte demits nachher kei Problem git */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(1, 0, 34);
+}
+
+.titel{
+    color: rgb(214, 208, 230);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.links li{
+    list-style: none;
+}
+
+.links a{
+    color: rgb(214, 208, 230);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
 }
