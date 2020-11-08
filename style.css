@@ -26,36 +26,43 @@ h1{
 }
 
 ul.Navigation{
-  border: 5px solid black;
   display: flex;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 10px;
+  padding-bottom: 0px;
   margin: 0px;
+  margin-right: 50px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  float: left;
+
 
 }
 
 li.Navigation{
-  border: 5px solid red;
   display: block;
+  background-color: black;
+  text-decoration: none;
+}
+
+li.Navigation a{
+  padding: 5px;
   font-family: sfbold;
   color: white;
   text-decoration: none;
-
-  
+  font-size: 20px;
 }
 
-a.Navigation{
-  font-family: sfbold;
-  color: white;
-  text-decoration: none;
-
+li.Navigation a:hover{
+  transition-duration: 0.3s;
+  background-color: #539493;
+  color: black;
 }
 
-a.Navigation:visited{
-  color: white;
-  text-decoration: none;
-}
+
 
 li h3 {
   margin: -1em 0 0.2em;
