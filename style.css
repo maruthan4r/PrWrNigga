@@ -10,7 +10,7 @@
     src: url(fonts/sfregular.otf) format("opentype");
 }
 
-/*SET DEFAULTS MAN*/
+/*CSS: DEFAULTS*/
 html{
     background-color:#539493;
     font-family: sfregular;
@@ -24,6 +24,23 @@ h1{
     text-align: center;
 }
 
+ul{
+  border: 12px solid black
+}
+
+li{
+  display: flex;
+  text-align: center;
+}
+
+li h3 {
+  margin: -1em 0 0.2em;
+}
+
+/*ENDE: DEFAULTS*/
+
+
+/*CSS: Zeitleiste*/
 #zeitleiste {
     position: relative;
     margin-left: 7.5em;
@@ -67,9 +84,7 @@ h1{
     margin-bottom: 3em;
   }
   
-  li h3 {
-    margin: -1em 0 0.2em;
-  }
+  
   
   time {
       display: block;
@@ -78,3 +93,5 @@ h1{
       width: 6.5em;
       text-align:right;
   }
+
+  /*ENDE ZEITLEISTE*/
