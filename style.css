@@ -10,6 +10,10 @@
     src: url(fonts/sfregular.otf) format("opentype");
 }
 
+p.intro{
+  color: white;
+}
+
 #zeitstrahl{
   display: flex;
   justify-content: center;
@@ -30,7 +34,7 @@ nav{
 }
 
 .logo{
-  color: rgb(160, 142, 240);
+  color: rgb(98, 0, 255);
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
@@ -46,7 +50,7 @@ nav{
 }
 
 .links a{
-  color: rgb(160, 142, 240);
+  color: rgb(98, 0, 255);
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
@@ -59,7 +63,7 @@ nav{
 
 /* Set a background color */
 body {
-  background-color: #474e5d;
+  background-color: #000000;
   font-family: Helvetica, sans-serif;
 }
 
