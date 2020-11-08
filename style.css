@@ -31,7 +31,7 @@ ul.Navigation{
 
 li.Navigation{
   border: 5px solid red;
-  display: block
+  display: flex
 }
 
 li h3 {
