@@ -25,12 +25,12 @@ h1{
 }
 
 ul.Navigation{
-  border: 12px solid black
+  border: 5px solid black
+
 }
 
-li{
-  display: flex;
-  text-align: center;
+li.Navigation{
+  border: 5px solid red;
 }
 
 li h3 {
