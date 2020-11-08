@@ -25,13 +25,14 @@ h1{
 }
 
 ul.Navigation{
-  border: 5px solid black
+  border: 5px solid black;
 
 }
 
 li.Navigation{
   border: 5px solid red;
-  display: flex
+  display: flex;
+  
 }
 
 li h3 {
