@@ -57,7 +57,7 @@ nav {
 }
 
 .text {
-    color: teal;
+    color: white;
     font-size: 20px;
     text-align: center;
 }
@@ -238,6 +238,12 @@ p.intro {
     background-color: teal;
     position: relative;
     border-radius: 6px;
+}
+
+.content:hover {
+    transition-duration: 0.4s;
+    background-color: #090E11;
+    color: teal;
 }
 
 
