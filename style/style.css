@@ -107,6 +107,8 @@ p.intro {
     display: flex;
     justify-content: center;
     width: 50%;
+    text-transform: uppercase;
+    font-size: 20px;
 }
 
 .links li {
@@ -246,6 +248,7 @@ p.intro {
     color: black;
     border: medium solid teal;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 
