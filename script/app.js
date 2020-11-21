@@ -73,6 +73,7 @@ function selectAnswer(e){
     if(selectedButton.dataset = correct){
         correctQuestionCounter++;
     }
+    document.getElementById('total-question').innerHTML = questions.length;
     document.getElementById('total-correct').innerHTML = correctQuestionCounter;
 }
 

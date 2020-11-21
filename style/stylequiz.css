@@ -32,6 +32,8 @@ p {
 
 h1 {
     font-family: sfbold;
+    margin-bottom: 20px;
+    font-size: 50px;
 }
 
 h1 {
@@ -64,7 +66,7 @@ nav {
     cursor: pointer;
 }
 
-.button:hover {
+.buttonnav:hover {
     transition-duration: 0.4s;
     background-color: teal;
     color: #121212;
@@ -103,24 +105,20 @@ nav {
     --hue-correct: 145;
 }
 
+.einleitung{
+    text-align: center;
+    color: white;
+}
+
 .quiz{
     --hue: var(--hue-neutral);
-    margin: 0;
+    margin-top: 100px;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(var(--hue), 100%, 20%);
-}
-
-.quiz.correct{
-    --hue: var(--hue-correct);
-}
-
-.quiz.wrong{
-    --hue: var(--hue-wrong);
 }
 
 .container{
