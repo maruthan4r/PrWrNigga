@@ -3,6 +3,10 @@ const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
+const resultBoardElement = document.getElementById('result');
+const againButtonElement = document.getElementById('again-btn');
+const homeButtonElement = document.getElementById('home-btn');
+let correctQuestionCounter = 0;
 
 let shuffledQuestions, currentQuestionIndex;
 
@@ -11,13 +15,17 @@ nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
     setNextQuestion();
 });
+againButtonElement.addEventListener('click', resetGame);
+homeButtonElement.addEventListener('click', home)
 
 function startGame(){
+    correctQuestionCounter = 0;
     console.log('Started');
     startButton.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
     questionContainerElement.classList.remove('hide');
+    questionElement.classList.remove('hide');
     setNextQuestion()
 }
 
@@ -54,12 +62,18 @@ function selectAnswer(e){
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
-    if(shuffledQuestions.length > currentQuestionIndex + 1){
+    
+    if(shuffledQuestions.length > currentQuestionIndex+1){
         nextButton.classList.remove('hide');
     } else {
-        startButton.innerText = "Restart";
-        startButton.classList.remove('hide')
+        questionContainerElement.classList.add('hide');
+        resultBoardElement.classList.remove('hide');
     }
+
+    if(selectedButton.dataset = correct){
+        correctQuestionCounter++;
+    }
+    document.getElementById('total-correct').innerHTML = correctQuestionCounter;
 }
 
 function setStatusClass(element, correct){
@@ -74,6 +88,15 @@ function setStatusClass(element, correct){
 function clearStatusClass(element){
     element.classList.remove('correct');
     element.classList.remove('wrong');
+}
+
+function resetGame(){
+    startButton.classList.remove('hide');
+    resultBoardElement.classList.add('hide');
+}
+
+function home(){
+    location.href = "index.html";
 }
 
 const questions = [
