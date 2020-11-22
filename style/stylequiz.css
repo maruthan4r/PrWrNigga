@@ -100,9 +100,9 @@ nav {
 }
 
 :root{
-    --hue-neutral: 200;
-    --hue-wrong: 0;
-    --hue-correct: 145;
+    --hue-neutral: teal;
+    --hue-wrong: rgb(129, 7, 7);
+    --hue-correct: rgb(8, 104, 8);
 }
 
 .einleitung{
@@ -139,8 +139,8 @@ nav {
 
 .btn{
     --hue: var(--hue-neutral);
-    border: 1px solid hsl(var(--hue), 100%, 30%);
-    background-color: hsl(var(--hue), 100%, 50%);
+    border: 1px solid var(--hue);
+    background-color: var(--hue);
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
