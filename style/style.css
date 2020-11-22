@@ -17,6 +17,14 @@
     box-sizing: border-box;
 }
 
+.loadinggif{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
     background-color: #242424;
     font-family: Helvetica, sans-serif;
@@ -75,7 +83,7 @@ nav {
 
 .button:hover {
     transition-duration: 0.4s;
-    background-color: teal;
+    background-color: #008080;
     color: #121212;
 }
 
