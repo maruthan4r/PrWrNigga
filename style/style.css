@@ -1,16 +1,3 @@
-@font-face {
-    font-family: sfbold;
-    src: url(fonts/sfbold.otf) format("opentype");
-}
-
-
-/**Initialisiert die Schriftarte für website*/
-
-@font-face {
-    font-family: sfregular;
-    src: url(fonts/sfregular.otf) format("opentype");
-}
-
 * {
     margin: 0px;
     padding: 0px;
@@ -30,38 +17,18 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
-p {
-    font-family: sfregular;
-}
-
-h1 {
-    font-family: sfbold;
-}
-
-h1 {
-    font-family: sfbold;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-decoration: none;
-    min-height: 8vh;
-    background-color: #1a1a1a;
-}
-
 #zeitstrahl {
     display: flex;
     justify-content: center;
-    font-family: sfbold;
     color: teal;
-    padding: 10px;
+    padding: 20px;
 }
 
 #Einleitung {
     text-align: center;
+    font-size: 45px;
     padding: 10px;
+    color: teal;
 }
 
 .text {
@@ -70,139 +37,14 @@ nav {
     text-align: center;
 }
 
-.button {
-    background-color: #1a1a1a;
-    border: none;
-    padding: 33px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.button:hover {
-    transition-duration: 0.4s;
-    background-color: #008080;
-    color: #121212;
-}
-
-h2.intro {
-    color: teal;
-}
-
-div.intro {
-    display: flex;
-    padding: 10px;
-}
-
-h2.intro {
-    color: teal;
-}
-
-p.intro {
-    color: teal;
-}
-
-
-/*FORM CSS----------------------------------------------------------------------------------------------------------------------------*/
-
-p.form {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-}
-
-h1.form {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-div.form {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-div.formTitle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-input.form {
-    background-color: white;
-    border-radius: 10px;
-    border: 5px solid white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-button.form {
-    background-color: white;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 15px;
-}
-
-textarea.messageBox {
-    border-radius: 10px;
-    border: 5px solid white;
-    height: 20em;
-    width: 30em;
-}
-
-
-/*END OF FORM CSS---------------------------------------------------------------------------------------------------------------------*/
-
-.logo {
-    color: teal;
-    text-transform: uppercase;
-    letter-spacing: normal;
-    font-size: 20px;
-}
-
-.links {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-.links li {
-    list-style: none;
-}
-
-.links a {
-    color: teal;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-
-/* Set a background color */
-
-
-/* The actual timeline (the vertical ruler) */
-
+/* Setzt Grössenlimit für den Zeitstrahl */
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-
-/* The actual timeline (the vertical ruler) */
-
+/* Der eigentliche Zeitstrahl */
 .timeline::after {
     content: '';
     position: absolute;
@@ -214,9 +56,7 @@ textarea.messageBox {
     margin-left: -3px;
 }
 
-
-/* Container around content */
-
+/* Der Container um den Content */
 .container {
     padding: 10px 40px;
     position: relative;
@@ -224,9 +64,7 @@ textarea.messageBox {
     width: 50%;
 }
 
-
-/* The circles on the timeline */
-
+/* Kreise auf dem Zeitstrahl */
 .container::after {
     content: '';
     position: absolute;
@@ -240,23 +78,17 @@ textarea.messageBox {
     z-index: 1;
 }
 
-
-/* Place the container to the left */
-
+/* Platzierung des linken Containers */
 .left {
     left: 0;
 }
 
-
-/* Place the container to the right */
-
+/* Platzierung des rechten Containers */
 .right {
     left: 50%;
 }
 
-
-/* Add arrows to the left container (pointing right) */
-
+/* Pfeile auf dem linken Container, die nach rechts zeigen */
 .left::before {
     content: " ";
     height: 0;
@@ -270,9 +102,7 @@ textarea.messageBox {
     border-color: transparent transparent transparent teal;
 }
 
-
-/* Add arrows to the right container (pointing left) */
-
+/* Pfeile auf dem rechten Container, die nach links zeigen */
 .right::before {
     content: " ";
     height: 0;
@@ -286,16 +116,12 @@ textarea.messageBox {
     border-color: transparent teal transparent transparent;
 }
 
-
-/* Fix the circle for containers on the right side */
-
+/* Positionierung des Kreises vom rechten Container */
 .right::after {
     left: -16px;
 }
 
-
-/* The actual content */
-
+/* Der Content selber */
 .content {
     padding: 20px 30px;
     background-color: teal;
@@ -304,6 +130,7 @@ textarea.messageBox {
     border-radius: 6px;
 }
 
+/* Effekt beim Hovern über den Content */
 .content:hover {
     transition-duration: 0.4s;
     background-color: rgb(3, 105, 105);
@@ -313,34 +140,38 @@ textarea.messageBox {
     cursor: pointer;
 }
 
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-
+/* Responsiver Media Query für Bildschirme unter 600px breit */
 @media screen and (max-width: 600px) {
-    /* Place the timelime to the left */
+
+    /* Platziere den Zeitstrahl nach links */
     .timeline::after {
         left: 31px;
     }
-    /* Full-width containers */
+
+    /* Container mit 100% Breite */
     .container {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
-    /* Make sure that all arrows are pointing leftwards */
+
+    /* Sicherstellen dass alle Pfeile nach links zeigen */
     .container::before {
         left: 60px;
         border: medium solid teal;
         border-width: 10px 10px 10px 0;
         border-color: transparent teal transparent transparent;
     }
-    /* Make sure all circles are at the same spot */
+
+    /* Sicherstellen dass alle Kreise am richtigen Ort sind */
     .left::after,
     .right::after {
         left: 15px;
     }
-    /* Make all right containers behave like the left ones */
+
+    /* Alle rechten Container gleich wie die linken */
     .right {
         left: 0%;
     }
 }
+
