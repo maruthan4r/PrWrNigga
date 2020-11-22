@@ -202,3 +202,11 @@ nav {
     font-weight: 500;
     color: black;
 }
+
+.no-click{
+    pointer-events: none;
+}
+
+.hidden{
+    visibility: hidden;
+}

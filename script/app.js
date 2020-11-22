@@ -7,6 +7,7 @@ const answerButtonsElement = document.getElementById('answer-buttons');
 const resultBoardElement = document.getElementById('result');
 const againButtonElement = document.getElementById('again-btn');
 const homeButtonElement = document.getElementById('home-btn');
+const introductionElement = document.getElementById('einleit');
 
 //Counter, der die richtigen Antworten zählt
 let correctQuestionCounter = 0;
@@ -17,6 +18,10 @@ let shuffledQuestions, currentQuestionIndex;
 //Verschiedene EventListener für die Buttons
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
+
+    //Entfernt wieder die Klasse "no-click" damit man die Buttons wieder anklicken kann
+    document.getElementById('answer-buttons').classList.remove('no-click');
+
     currentQuestionIndex++;
     setNextQuestion();
 });
@@ -25,6 +30,9 @@ homeButtonElement.addEventListener('click', home)
 
 //startGame startet das Spiel und wird durch den "Start" Button ausgelöst
 function startGame(){
+
+    //Versteckt die Einleitung beim Start des Spiels
+    introductionElement.classList.add('hidden');
 
     //Bei Spielstart wird der Counter auf 0 gesetzt
     correctQuestionCounter = 0;
@@ -81,6 +89,10 @@ function showQuestion(question){
 
 //Reagiert auf den EventListener eines Antwort-Buttons, Parameter "e" ist der angeklickte Button
 function selectAnswer(e){
+
+    //Verhindert das mehrmalige Anklicken einer Antwort
+    document.getElementById('answer-buttons').classList.remove('no-click');
+
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
 
@@ -108,6 +120,7 @@ function selectAnswer(e){
     //Ersetzt den default Wert des Resultat-Boards durch Anzahl Fragen und Anzahl richtiger Fragen
     document.getElementById('total-question').innerHTML = questions.length;
     document.getElementById('total-correct').innerHTML = correctQuestionCounter;
+
 }
 
 //Setzt für den Button den jeweiligen Status (Richtig oder Falsch)
@@ -129,7 +142,11 @@ function clearStatusClass(element){
 //Wird durch den EventListener des Buttons "Try Again" ausgeführt und resettet das Quiz
 function resetGame(){
     startButton.classList.remove('hide');
+    introductionElement.classList.remove('hidden');
     resultBoardElement.classList.add('hide');
+
+    //Da bei der letzten Frage kein Next-Button erscheint muss man die Buttons hier nochmals resetten
+    document.getElementById('answer-buttons').classList.remove('no-click');
 }
 
 //Wird durch den Eventlistener des Buttons "Go To Home" ausgeführt und führt den User zum File "index.html"
