@@ -3,13 +3,18 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/transition.css">
     <!--Tuen CSS erst am Schluss ihbinde wenns Grüst etc fertig isch.-->
 
     <meta charset="utf-8">
     <title>Computer</title>
+    <script defer src="script/transition.js"></script>
 </head>
 
 <body>
+
+    <div class="transition transition-1 is-active"></div>
+    
     <header>
         <nav>
             <div class="logo">
@@ -19,9 +24,6 @@
                 <h4 class="logo">Geschichte des modernen Computers</h4>
             </div>
             <ul class="links">
-                <li>
-                    <a href="#zeitstrahl" class="button">Zeitstrahl</a>
-                </li>
                 <li>
                     <a href="quiz.html" class="button">Quiz</a>
                 </li>
@@ -46,7 +48,7 @@
     </div>
 
     <div class="timeline">
-        <div class="container left">
+        <div class="container left cont" id="erste.html" onclick="redirect(id)">
             <div class="content">
                 <h2>1941</h2>
                 <p>Konrad Zuse baute erste binäre Rechenmaschine</p>
