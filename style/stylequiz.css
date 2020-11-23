@@ -48,63 +48,10 @@ h1 {
     font-family: sfbold;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-decoration: none;
-    min-height: 8vh;
-    background-color: #1a1a1a;
-}
-
 .text {
     color: white;
     font-size: 20px;
     text-align: center;
-}
-
-.buttonnav {
-    background-color: #1a1a1a;
-    border: none;
-    padding: 33px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.buttonnav:hover {
-    transition-duration: 0.4s;
-    background-color: teal;
-    color: #121212;
-}
-
-.logo {
-    color: teal;
-    text-transform: uppercase;
-    letter-spacing: normal;
-    font-size: 20px;
-}
-
-.links {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-.links li {
-    list-style: none;
-}
-
-.links a {
-    color: teal;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
 }
 
 :root{
