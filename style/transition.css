@@ -1,16 +1,14 @@
 .transition-1{
     position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    bottom: 0;
-    z-index: 101;
+    opacity: 0;
+    z-index: -1;
     background-color: #242424;
     transition: 0.5s ease-out;
 }
 
 .transition-1.is-active{
-    left: 0px;
+    opacity: 1;
+    z-index: 101;
 }
 
 .transition-2{
