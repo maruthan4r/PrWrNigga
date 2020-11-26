@@ -175,5 +175,19 @@ body {
     }
 }
 
+/* Generation-Content */
+.generation-cont {
+    display: grid;
+    justify-content: center;
+}
+.generation-text {
+    color: white;
+    background-color: red;
+    height: 2000px;
+    margin-top: 50px;
+}
 
+.hide{
+    display: none;
+}
 

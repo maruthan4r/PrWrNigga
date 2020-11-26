@@ -9,6 +9,9 @@ const againButtonElement = document.getElementById('again-btn');
 const homeButtonElement = document.getElementById('home-btn');
 const introductionElement = document.getElementById('einleit');
 
+//Counter, der die Anzahl Versuche zählt
+let attemptsCounter = 0;
+
 //Counter, der die richtigen Antworten zählt
 let correctQuestionCounter = 0;
 
@@ -30,6 +33,9 @@ homeButtonElement.addEventListener('click', home)
 
 //startGame startet das Spiel und wird durch den "Start" Button ausgelöst
 function startGame(){
+
+    //Erhöht die Anzahl Versuche
+    attemptsCounter++;
 
     //Versteckt die Einleitung beim Start des Spiels
     introductionElement.classList.add('hidden');
@@ -118,6 +124,7 @@ function selectAnswer(e){
     }
 
     //Ersetzt den default Wert des Resultat-Boards durch Anzahl Fragen und Anzahl richtiger Fragen
+    document.getElementById('total-attempts').innerHTML = attemptsCounter;
     document.getElementById('total-question').innerHTML = questions.length;
     document.getElementById('total-correct').innerHTML = correctQuestionCounter;
 

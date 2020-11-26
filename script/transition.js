@@ -33,18 +33,3 @@ window.onload = () => {
         });
     }
 }
-
-//Wird ausgeführt wenn man auf einen Zeitstrahl Container klickt
-function redirect(id){
-
-    //Get verschiedene HTML-Elemente
-    const transitionElement = document.querySelector('.transition');
-    
-    //Aktiviert Animation
-    transitionElement.classList.add('is-active');
-
-    //Wartet bis Animation fertig ist, zeigt nachher neue Seite an
-    setTimeout(() => {
-        window.location.href = id;
-    }, 500);
-}
