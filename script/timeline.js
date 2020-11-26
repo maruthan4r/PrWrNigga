@@ -23,3 +23,4 @@ function redirect(ident){
         behavior: 'smooth'
     });
 }
+

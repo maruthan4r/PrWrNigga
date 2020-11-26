@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+header {
+    display: grid;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
 .loadinggif{
     width: 100vw;
     height: 100vh;
