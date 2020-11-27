@@ -24,3 +24,41 @@ function redirect(ident){
     });
 }
 
+//Wird ausgeführt bei Klicken des "Zeitstrahl" Buttons und scrollt bis zum Anfang des Zeitstrahls
+function jumpTimeLine(){
+
+    //Scrollt zur Position des Zeitstrahls
+    window.scrollTo({
+        top: 0,
+        left: 1300,
+        behavior: 'smooth'
+    });
+}
+
+//Wird ausgeführt bei Klicken des "Nächste Generation" Buttons und entfernt den ursprünglichen Content und zeigt den neuen an
+function jumpNext(obj){
+
+    //Array mit allen Contents
+    const array = Array.from(allGenerationTextElements.children);
+
+    //Verstecke den ursprünglichen Content
+    obj.parentNode.classList.add('hide');
+
+    //Get ID des ursprünglichen Contents und Erhöhung der ID um 1
+    let objid = obj.parentNode.id;
+    objid++;
+
+    //Checkt jedes Element im Array und falls gefunden zeigt Content am Bildschirm an
+    for(let i = 0; i < array.length; i++){
+        if(array[i].id == objid){
+            array[i].classList.remove('hide');
+        }
+    }
+
+    //Scrollt zur Position des Contents
+    window.scrollTo({
+        top: 1000,
+        left: 1300,
+        behavior: 'smooth'
+    });
+}
