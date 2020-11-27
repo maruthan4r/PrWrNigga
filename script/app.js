@@ -126,10 +126,13 @@ function selectAnswer(e){
         nextButton.classList.remove('hide');
     } else {
 
-        //Entfernt richtig oder falsch Text
-        resetText();
-        questionContainerElement.classList.add('hide');
-        resultBoardElement.classList.remove('hide');
+        //Setzt Timeout damit Richtig/Falsch Text kurz angezeigt wird und nachher wird das Resultat-Board angezeigt
+        setTimeout(() => {
+            resetText();
+            questionContainerElement.classList.add('hide');
+            resultBoardElement.classList.remove('hide');
+        }, 1000);
+
     }
 
     //Ersetzt den default Wert des Resultat-Boards durch Anzahl Fragen und Anzahl richtiger Fragen
