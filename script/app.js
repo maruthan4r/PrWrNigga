@@ -8,6 +8,8 @@ const resultBoardElement = document.getElementById('result');
 const againButtonElement = document.getElementById('again-btn');
 const homeButtonElement = document.getElementById('home-btn');
 const introductionElement = document.getElementById('einleit');
+const correctTextElement = document.getElementById('correct')
+const wrongTextElement = document.getElementById('wrong');
 
 //Counter, der die Anzahl Versuche zählt
 let attemptsCounter = 0;
@@ -21,6 +23,8 @@ let shuffledQuestions, currentQuestionIndex;
 //Verschiedene EventListener für die Buttons
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
+
+    resetText();
 
     //Entfernt wieder die Klasse "no-click" damit man die Buttons wieder anklicken kann
     document.getElementById('answer-buttons').classList.remove('no-click');
@@ -101,7 +105,6 @@ function selectAnswer(e){
 
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
-
     /*
     Erstellt ein Array, da die Buttons vorher nicht in einem Array gespeichert werden 
     und führt für jeden Button die Funktion setStatusClass aus
@@ -109,18 +112,24 @@ function selectAnswer(e){
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
-    
+
+    //Falls die Antwort richtig war wird der Counter erhöht und der dementsprechende Text wird angezeigt
+    if(selectedButton.dataset = correct){
+        correctQuestionCounter++;
+        correctTextElement.classList.remove('hide');
+    } else {
+        wrongTextElement.classList.remove('hide');
+    }
+
     //Kontrolliert ob noch Fragen übrig sind, falls nicht zeigt es das Resultat-Board an
     if(shuffledQuestions.length > currentQuestionIndex+1){
         nextButton.classList.remove('hide');
     } else {
+
+        //Entfernt richtig oder falsch Text
+        resetText();
         questionContainerElement.classList.add('hide');
         resultBoardElement.classList.remove('hide');
-    }
-
-    //Falls die Antwort richtig war wird der Counter erhöht
-    if(selectedButton.dataset = correct){
-        correctQuestionCounter++;
     }
 
     //Ersetzt den default Wert des Resultat-Boards durch Anzahl Fragen und Anzahl richtiger Fragen
@@ -159,6 +168,12 @@ function resetGame(){
 //Wird durch den Eventlistener des Buttons "Go To Home" ausgeführt und führt den User zum File "index.html"
 function home(){
     location.href = "index.html";
+}
+
+//Entfernt den Richtig oder Falsch Text auf dem Bildschirm
+function resetText(){
+    correctTextElement.classList.add('hide');
+    wrongTextElement.classList.add('hide');
 }
 
 //Array von Fragen mit den jeweiligen Antworten
