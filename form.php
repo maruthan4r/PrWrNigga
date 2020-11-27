@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <script defer src="script/transition.js"></script>
     <script defer src="script/navbar.js"></script>
+    <script src="script/form.js"></script>
     <title>Formular</title>
 </head>
 
@@ -47,16 +48,24 @@
 <div class="form">
 
 
-    <form class="form" action="validation.php" method="GET">
+    <form class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
         <p class="form">Ihr name:</p>
-        <p class="form"><input class="form" type="text" name="username"></p>
+        <p class="form"><input class="form" type="text" name="name"></p>
+        <div class="error" id="nameErr"></div>
+
         <p class="form">Ihre E-Mail:</p>
-        <p class="form"><input class="form" type="email" name="mail"></p>
+        <p class="form"><input class="form" type="email" name="mail" required="required"></p>
+        <div class="error" id="emailErr"></div>
         <p class="form" id="nachricht">Ihre Nachricht:</p>
         <textarea class="messageBox" name="message" placeholder="Ihre Nachricht"></textarea>
-        <p class="form"><input type="submit" action="validation.php" class="form" value="Abschicken" name="senden"></p>
+        <p class="form"><input type="submit" class="form" value="Abschicken" name="senden"></p>
     </form>
 
 </div>
 
+<?php
+if (isset($_POST['name'])){
+    echo $_POST['name'];
+}
+?>
 </html>
