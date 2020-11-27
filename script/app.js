@@ -15,7 +15,7 @@ let attemptsCounter = 0;
 //Counter, der die richtigen Antworten zählt
 let correctQuestionCounter = 0;
 
-//shuffledQuestions wird eine zufällige Frage sein, currentQuestionIndex ist der curIndex vom questions Array
+//shuffledQuestions wird eine zufällige Frage sein, currentQuestionIndex ist der curIndex vom questions Arrays
 let shuffledQuestions, currentQuestionIndex;
 
 //Verschiedene EventListener für die Buttons
