@@ -11,7 +11,7 @@ header {
     z-index: 99;
 }
 
-.loadinggif{
+.loadinggif {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -44,14 +44,18 @@ body {
     text-align: center;
 }
 
+
 /* Setzt Grössenlimit für den Zeitstrahl */
+
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+
 /* Der eigentliche Zeitstrahl */
+
 .timeline::after {
     content: '';
     position: absolute;
@@ -63,7 +67,9 @@ body {
     margin-left: -3px;
 }
 
+
 /* Der Container um den Content */
+
 .container {
     padding: 10px 40px;
     position: relative;
@@ -71,7 +77,9 @@ body {
     width: 50%;
 }
 
+
 /* Kreise auf dem Zeitstrahl */
+
 .container::after {
     content: '';
     position: absolute;
@@ -85,17 +93,23 @@ body {
     z-index: 1;
 }
 
+
 /* Platzierung des linken Containers */
+
 .left {
     left: 0;
 }
 
+
 /* Platzierung des rechten Containers */
+
 .right {
     left: 50%;
 }
 
+
 /* Pfeile auf dem linken Container, die nach rechts zeigen */
+
 .left::before {
     content: " ";
     height: 0;
@@ -109,7 +123,9 @@ body {
     border-color: transparent transparent transparent teal;
 }
 
+
 /* Pfeile auf dem rechten Container, die nach links zeigen */
+
 .right::before {
     content: " ";
     height: 0;
@@ -123,12 +139,16 @@ body {
     border-color: transparent teal transparent transparent;
 }
 
+
 /* Positionierung des Kreises vom rechten Container */
+
 .right::after {
     left: -16px;
 }
 
+
 /* Der Content selber */
+
 .content {
     padding: 20px 30px;
     background-color: teal;
@@ -137,7 +157,9 @@ body {
     border-radius: 6px;
 }
 
+
 /* Effekt beim Hovern über den Content */
+
 .content:hover {
     transition-duration: 0.4s;
     background-color: rgb(3, 105, 105);
@@ -147,21 +169,20 @@ body {
     cursor: pointer;
 }
 
-/* Responsiver Media Query für Bildschirme unter 600px breit */
-@media screen and (max-width: 600px) {
 
+/* Responsiver Media Query für Bildschirme unter 600px breit */
+
+@media screen and (max-width: 600px) {
     /* Platziere den Zeitstrahl nach links */
     .timeline::after {
         left: 31px;
     }
-
     /* Container mit 100% Breite */
     .container {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
-
     /* Sicherstellen dass alle Pfeile nach links zeigen */
     .container::before {
         left: 60px;
@@ -169,24 +190,25 @@ body {
         border-width: 10px 10px 10px 0;
         border-color: transparent teal transparent transparent;
     }
-
     /* Sicherstellen dass alle Kreise am richtigen Ort sind */
     .left::after,
     .right::after {
         left: 15px;
     }
-
     /* Alle rechten Container gleich wie die linken */
     .right {
         left: 0%;
     }
 }
 
+
 /* Generation-Content */
+
 .generation-cont {
     display: grid;
     justify-content: stretch;
 }
+
 .generation-text {
     color: white;
     text-align: center;
@@ -195,10 +217,18 @@ body {
     margin-top: 50px;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
 .btntimeline {
     color: red;
+}
+
+.textbox {
+    width: 70%;
+    align-items: center;
+    text-align: center;
+    border: 12px solid #242424;
+    line-height: 32px;
 }
