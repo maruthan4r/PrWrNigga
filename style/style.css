@@ -210,6 +210,11 @@ body {
     align-items: center;
 }
 
+.text-Image {
+    size: 50px 50px;
+    border: 12px solid orange;
+}
+
 .generation-text {
     color: white;
     text-align: center;
@@ -231,10 +236,14 @@ body {
     color: red;
 }
 
+.ueberschrift {
+    padding: 5px;
+}
+
 .textbox {
-    width: 70%;
+    width: 50%;
     align-items: center;
     text-align: center;
     border: 12px solid #242424;
-    line-height: 32px;
+    font-size: 14px;
 }
