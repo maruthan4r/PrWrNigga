@@ -243,5 +243,68 @@ const questions = [
             { text: 'Transistoren', correct: false },
             { text: 'Batterien', correct: false }
         ]
+    },
+    {
+        question: "Wer erstellte den ersten Personal Computer (PC)?",
+        answers: [
+            { text: 'Apple Computer', correct: true },
+            { text: 'Barack Obama', correct: false },
+            { text: 'Steve Wozniak', correct: true },
+            { text: 'HP', correct: false }
+        ]
+    },
+    {
+        question: "Was war hatte der 'Apple Macintosh', was zu der Zeit speziell war?",
+        answers: [
+            { text: 'Barack Obama', correct: false },
+            { text: 'Maus', correct: true },
+            { text: 'Ventilator', correct: false },
+            { text: 'Mikrowelle', correct: false }
+        ]
+    },
+    {
+        question: "Was war das Usenet?",
+        answers: [
+            { text: 'ein weltweites Netzwerk', correct: true },
+            { text: 'eine Organisation', correct: false },
+            { text: 'ein Betriebssysten', correct: false },
+            { text: 'Barack Obama', correct: false }
+        ]
+    },
+    {
+        question: "Was war die erste registrierte Domain des Internets?",
+        answers: [
+            { text: 'barack-obama.net', correct: false },
+            { text: 'google.com', correct: false },
+            { text: 'nordu.net', correct: true },
+            { text: 'wikipedia.org', correct: false }
+        ]
+    },
+    {
+        question: "Warum waren die Intel Pentium Prozessoren kein wirtschaftlicher Erfolg?",
+        answers: [
+            { text: 'Barack Obama verbot den Verkauf', correct: false },
+            { text: 'zu teuer', correct: true },
+            { text: 'sie gingen schnell kaputt', correct: false },
+            { text: 'Konkurrenz war besser', correct: true }
+        ]
+    },
+    {
+        question: "Wer brachte den ersten 64-Bit-Prozessor auf den Markt?",
+        answers: [
+            { text: 'HP', correct: false },
+            { text: 'Barack Obama', correct: false },
+            { text: 'Apple', correct: true },
+            { text: 'Intel', correct: false }
+        ]
+    },
+    {
+        question: "Welches ist KEIN Betriebssystem?",
+        answers: [
+            { text: 'Apple', correct: false },
+            { text: 'Windows', correct: false },
+            { text: 'Linux', correct: false },
+            { text: 'Intel', correct: true }
+        ]
     }
 ];
