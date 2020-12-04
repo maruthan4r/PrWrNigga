@@ -216,6 +216,7 @@ body {
 }
 
 .generation-text {
+    display: block;
     color: white;
     text-align: center;
     align-items: center;
@@ -225,8 +226,6 @@ body {
     height: 2000px;
     margin-top: 50px;
     width: fit-content;
-    height: fit-content;
-    flex-direction: row;
 }
 
 .hide {
