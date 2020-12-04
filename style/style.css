@@ -219,6 +219,8 @@ body {
     border: 10px solid blue;
     height: 2000px;
     margin-top: 50px;
+    width: fit-content;
+    height: fit-content;
 }
 
 .hide {
