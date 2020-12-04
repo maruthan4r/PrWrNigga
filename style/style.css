@@ -205,14 +205,18 @@ body {
 /* Generation-Content */
 
 .generation-cont {
-    display: grid;
+    display: flex;
     justify-content: stretch;
+    align-items: center;
 }
 
 .generation-text {
     color: white;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(75, 17, 17);
+    border: 10px solid blue;
     height: 2000px;
     margin-top: 50px;
 }
