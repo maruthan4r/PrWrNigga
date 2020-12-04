@@ -101,7 +101,7 @@ function showQuestion(question){
 function selectAnswer(e){
 
     //Verhindert das mehrmalige Anklicken einer Antwort
-    document.getElementById('answer-buttons').classList.remove('no-click');
+    document.getElementById('answer-buttons').classList.add('no-click');
 
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
@@ -182,17 +182,66 @@ function resetText(){
 //Array von Fragen mit den jeweiligen Antworten
 const questions = [
     {
-        question: "Ist Patrick fett?",
+        question: "Wer entwickelte den Z1?",
         answers: [
-            { text: 'Ja', correct: true },
-            { text: 'Nein', correct: false }
+            { text: 'Steve Jobs', correct: false },
+            { text: 'Elon Musk', correct: false },
+            { text: 'Barack Obama', correct: false },
+            { text: 'Konrad Zuse', correct: true }
         ]
     },
     {
-        question: "Ist das Quiz gut?",
+        question: "Welcher Computer wurde nicht zerstört?",
         answers: [
-            { text: 'Ja', correct: true },
-            { text: 'Nein', correct: false }
+            { text: 'Z1', correct: false },
+            { text: 'Z2', correct: false },
+            { text: 'Barack Obama', correct: false },
+            { text: 'Z4', correct: true }
+        ]
+    },
+    {
+        question: "Durch was wurden die Röhren in den 1950er ersetzt?",
+        answers: [
+            { text: 'Transistoren', correct: true },
+            { text: 'Kartoffeln', correct: false },
+            { text: 'Batterien', correct: false },
+            { text: 'Barack Obama', correct: false }
+        ]
+    },
+    {
+        question: "Wer baute ERMETH, den ersten europäischen Computer?",
+        answers: [
+            { text: 'Max-Planck-Institut', correct: false },
+            { text: 'ETH Zürich', correct: true },
+            { text: 'Barack Obama', correct: false },
+            { text: 'University of Oxford', correct: false }
+        ]
+    },
+    {
+        question: "Welches System wurde eingeführt, um verschiedene Computer kompatibel zu machen?",
+        answers: [
+            { text: 'System/180', correct: false },
+            { text: 'Barack Obama', correct: false },
+            { text: 'System/360', correct: true },
+            { text: 'System/69', correct: false }
+        ]
+    },
+    {
+        question: "Was bedeutet ursprünglich die Abkürzung 'HP'?",
+        answers: [
+            { text: 'Hewlett-Piccard', correct: false },
+            { text: 'Barack Obama', correct: false },
+            { text: 'Howard-Piccard', correct: false },
+            { text: 'Hewlett-Packard', correct: true }
+        ]
+    },
+    {
+        question: "Mit was wurde der Supercomputer 'Illiac IV' bestückt?",
+        answers: [
+            { text: 'Barack-Obama', correct: false },
+            { text: 'Array-Prozessoren', correct: true },
+            { text: 'Transistoren', correct: false },
+            { text: 'Batterien', correct: false }
         ]
     }
-]
+];
