@@ -218,14 +218,10 @@ body {
 .generation-text {
     display: block;
     color: white;
-    text-align: center;
-    align-items: center;
+    height: max-content;
+    padding: 10px;
     justify-content: center;
-    background-color: rgb(75, 17, 17);
-    border: 10px solid blue;
-    height: 2000px;
-    margin-top: 50px;
-    width: fit-content;
+    align-items: center;
 }
 
 .hide {
@@ -233,7 +229,20 @@ body {
 }
 
 .btntimeline {
-    color: red;
+    padding: 5px;
+    font-weight: bolder;
+    background-color: teal;
+    color: white;
+    height: fit-content;
+    border: 5px solid teal;
+    border-radius: 2em;
+}
+
+.buttonBox {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
 }
 
 .ueberschrift {
@@ -241,10 +250,37 @@ body {
 }
 
 .textbox {
-    width: 50%;
+    width: 100%;
     align-items: center;
     text-align: center;
-    border: 12px solid #242424;
     font-size: 14px;
-    background-color: red;
+    background-color: teal;
+    border: 12px solid none;
+    border-radius: 1.5em;
+    padding: 10px;
+}
+
+.images {
+    display: flex;
+    height: fit-content;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    border-radius: 2em;
+    justify-content: center;
+}
+
+.realImage {
+    border-radius: 20px;
+}
+
+.documentationBox {
+    border: 12px solid teal;
+    border-radius: 2em;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
