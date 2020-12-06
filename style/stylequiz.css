@@ -180,3 +180,22 @@ h1 {
 .wrong-result {
     color: red;
 }
+
+@media screen and (max-width:750px){
+
+    .btn {
+        padding: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    #next-btn {
+        padding: 30px;
+    }
+
+    #question {
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
