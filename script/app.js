@@ -116,9 +116,9 @@ function selectAnswer(e){
     //Falls die Antwort richtig war wird der Counter erhöht und der dementsprechende Text wird angezeigt
     if(selectedButton.dataset = correct){
         correctQuestionCounter++;
-        correctTextElement.classList.remove('hide');
+        correctTextElement.classList.remove('hidden');
     } else {
-        wrongTextElement.classList.remove('hide');
+        wrongTextElement.classList.remove('hidden');
     }
 
     //Kontrolliert ob noch Fragen übrig sind, falls nicht zeigt es das Resultat-Board an
@@ -175,8 +175,8 @@ function home(){
 
 //Entfernt den Richtig oder Falsch Text auf dem Bildschirm
 function resetText(){
-    correctTextElement.classList.add('hide');
-    wrongTextElement.classList.add('hide');
+    correctTextElement.classList.add('hidden');
+    wrongTextElement.classList.add('hidden');
 }
 
 //Array von Fragen mit den jeweiligen Antworten

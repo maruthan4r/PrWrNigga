@@ -61,3 +61,29 @@ function jumpNext(obj){
         }
     }
 }
+
+function jumpPrevious(obj){
+
+    //Scrollt zur Position des Contents
+    window.scrollTo({
+        top: 1000,
+        behavior: 'smooth'
+    });
+
+    //Array mit allen Contents
+    const array = Array.from(allGenerationTextElements.children);
+
+    //Verstecke den ursprünglichen Content
+    obj.parentNode.parentNode.classList.add('hide');
+
+    //Get ID des ursprünglichen Contents und Erhöhung der ID um 1
+    let objid = obj.parentNode.parentNode.id;
+    objid--;
+
+    //Checkt jedes Element im Array und falls gefunden zeigt Content am Bildschirm an
+    for(let i = 0; i < array.length; i++){
+        if(array[i].id == objid){
+            array[i].classList.remove('hide');
+        }
+    }
+}

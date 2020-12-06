@@ -170,7 +170,7 @@ body {
 }
 
 
-/* Responsiver Media Query für Bildschirme unter 600px breit */
+/* Responsiver Media Query für Bildschirme unter 750px breit */
 
 @media screen and (max-width: 750px) {
     /* Platziere den Zeitstrahl nach links */
@@ -199,15 +199,12 @@ body {
     .right {
         left: 0%;
     }
-
     .ueberschrift {
         font-size: 30px;
     }
-
     .textbox {
         line-height: 15px;
     }
-
     .textbox h2 {
         font-size: 25px;
     }
@@ -266,11 +263,11 @@ body {
 
 .ueberschrift:after {
     content: "";
-    display: block; 
-    margin: 0 auto; 
-    width: 50%; 
-    padding-top: 20px; 
-    border-bottom: 3px solid black; 
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 20px;
+    border-bottom: 3px solid black;
 }
 
 .textbox {
@@ -282,7 +279,7 @@ body {
     background-color: teal;
     border: 12px solid none;
     border-radius: 1.5em;
-    padding: 10px;
+    padding: 20px;
 }
 
 .textbox h2 {
@@ -308,6 +305,6 @@ body {
     height: fit-content;
     width: fit-content;
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 60% 40%;
     padding: 10px;
 }
