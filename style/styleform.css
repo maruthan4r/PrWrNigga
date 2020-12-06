@@ -1,6 +1,6 @@
 /*FORM CSS----------------------------------------------------------------------------------------------------------------------------*/
 
-.form{
+.form {
     outline: none;
 }
 
@@ -53,21 +53,40 @@ textarea.messageBox {
     width: 30em;
 }
 
-input[type=email]:focus, input[type=text]:focus, textarea:focus{
+input[type=email]:focus,
+input[type=text]:focus,
+textarea:focus {
     border: 3px solid teal;
 }
 
-#nachricht{
+#nachricht {
     padding-bottom: 25px;
 }
 
-#button{
+#button {
     width: 100px;
     margin-top: 20px;
     padding: 5px;
 }
 
-#button:hover{
+#button:hover {
     border: 2px solid teal;
 }
+
+
 /*END OF FORM CSS---------------------------------------------------------------------------------------------------------------------*/
+
+
+/*START OF VALIDATION CSS*/
+
+.response {
+    display: flex;
+    background-color: teal;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+p.responseText {
+    font-weight: bolder;
+}
