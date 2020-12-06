@@ -170,7 +170,7 @@ body {
 }
 
 
-/* Responsiver Media Query für Bildschirme unter 600px breit */
+/* Responsiver Media Query für Bildschirme unter 750px breit */
 
 @media screen and (max-width: 750px) {
     /* Platziere den Zeitstrahl nach links */
