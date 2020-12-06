@@ -32,10 +32,36 @@
             </div>
         </nav>
     </header>
-    
-<div class="response"><?php
+
+<div class="response">
+    <?php
+
+    $message = 'Absender: '.$_GET['mail']."Nachricht: ".$_GET['message'];
+
+require_once('PHPMailer/PHPMailerAutoload.php');
+
+
+$mail = new PHPMailer();
+
+$mail->isSMTP();
+$mail->SMTPAuth=true;
+$mail->SMTPSecure = 'ssl';
+$mail->Host ='smtp.gmail.com';
+$mail->Port = '465';
+$mail->isHTML();
+$mail->Username = 'pchistory.contact@gmail.com';
+$mail->Password ='Thanabal44';
+$mail->SetFrom('no-reply@howcode.org');
+$mail->Subject = 'Kontaktformular';
+$mail->Body = $message;
+$mail->AddAddress('maruthan@outlook.com');
+
+$mail->send();
+
 if (isset($_GET['name'])){
+    if($mail->send()){
     $name = "Vielen Dank für Ihre Nachricht ".$_GET['name'];
+    }
 }else{
     $name = "Etwas ist schiefgelaufen!";
 }
