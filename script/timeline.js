@@ -38,6 +38,12 @@ function jumpTimeLine(){
 //Wird ausgeführt bei Klicken des "Nächste Generation" Buttons und entfernt den ursprünglichen Content und zeigt den neuen an
 function jumpNext(obj){
 
+    //Scrollt zur Position des Contents
+    window.scrollTo({
+        top: 1000,
+        behavior: 'smooth'
+    });
+
     //Array mit allen Contents
     const array = Array.from(allGenerationTextElements.children);
 
@@ -54,11 +60,4 @@ function jumpNext(obj){
             array[i].classList.remove('hide');
         }
     }
-
-    //Scrollt zur Position des Contents
-    window.scrollTo({
-        top: 1000,
-        left: 1300,
-        behavior: 'smooth'
-    });
 }
