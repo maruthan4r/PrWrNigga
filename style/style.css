@@ -199,15 +199,12 @@ body {
     .right {
         left: 0%;
     }
-
     .ueberschrift {
         font-size: 30px;
     }
-
     .textbox {
         line-height: 15px;
     }
-
     .textbox h2 {
         font-size: 25px;
     }
@@ -266,11 +263,11 @@ body {
 
 .ueberschrift:after {
     content: "";
-    display: block; 
-    margin: 0 auto; 
-    width: 50%; 
-    padding-top: 20px; 
-    border-bottom: 3px solid black; 
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 20px;
+    border-bottom: 3px solid black;
 }
 
 .textbox {
@@ -282,7 +279,7 @@ body {
     background-color: teal;
     border: 12px solid none;
     border-radius: 1.5em;
-    padding: 10px;
+    padding: 20px;
 }
 
 .textbox h2 {
