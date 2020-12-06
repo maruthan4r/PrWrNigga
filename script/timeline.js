@@ -42,10 +42,10 @@ function jumpNext(obj){
     const array = Array.from(allGenerationTextElements.children);
 
     //Verstecke den ursprünglichen Content
-    obj.parentNode.classList.add('hide');
+    obj.parentNode.parentNode.classList.add('hide');
 
     //Get ID des ursprünglichen Contents und Erhöhung der ID um 1
-    let objid = obj.parentNode.id;
+    let objid = obj.parentNode.parentNode.id;
     objid++;
 
     //Checkt jedes Element im Array und falls gefunden zeigt Content am Bildschirm an
