@@ -65,6 +65,25 @@ h1 {
     color: white;
 }
 
+#einleit p {
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+#einleit h1 {
+    font-size: 80px;
+    color: teal;
+}
+
+.einleittitel:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    padding-top: 20px;
+    border-bottom: 3px solid teal;
+}
+
 .quiz{
     --hue: var(--hue-neutral);
     margin-top: 100px;
@@ -97,7 +116,9 @@ h1 {
     border: 1px solid var(--hue);
     background-color: var(--hue);
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 15px;
     color: white;
     outline: none;
     border: 2px solid;
@@ -121,13 +142,18 @@ h1 {
 .start-btn, .next-btn{
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 20px 30px;
 }
 
 .controls{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#question {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .hide{
