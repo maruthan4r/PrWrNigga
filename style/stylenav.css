@@ -3,16 +3,15 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
+    background-color: #1a1a1a;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-#navigation {
-    background-color: rgb(201, 201, 201);
-}
-
 .button {
-    background-color: border: 5px solid padding: 33px;
+    background-color: #1a1a1a;
+    border: 5px solid #1a1a1a;
+    padding: 33px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
