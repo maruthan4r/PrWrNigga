@@ -1,58 +1,324 @@
-        @ -18,6 +18,
-15 @@ font-family: sfbold;
+@font-face {
+    font-family: sfbold;
+    src: url(fonts/sfbold.otf) format("opentype");
+}
 
+
+/**Initialisiert die Schriftarte für website*/
+
+@font-face {
+    font-family: sfregular;
+    src: url(fonts/sfregular.otf) format("opentype");
 }
-.dark-mode {
-    background-color: #242424;
-    color: white;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sfbold;
 }
-.dark-mode p {
-    color: white;
-}
+
 header {
     display: grid;
     position: sticky;
-    @ -34,7 +43,
-    7 @@ header {}
-    
-    body {
-        background-color: #242424;
-        background-color: rgb(201, 201, 201);
-        font-family: Helvetica, sans-serif;
+    top: 0;
+    z-index: 99;
+}
+
+.loadinggif {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #242424;
+    font-family: Helvetica, sans-serif;
+}
+
+#zeitstrahl {
+    display: flex;
+    justify-content: center;
+    color: teal;
+    padding: 20px;
+}
+
+#Einleitung {
+    text-align: center;
+    font-size: 45px;
+    padding: 10px;
+    color: teal;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* Setzt Grössenlimit für den Zeitstrahl */
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Der eigentliche Zeitstrahl */
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: teal;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+
+/* Der Container um den Content */
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+
+/* Kreise auf dem Zeitstrahl */
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: teal;
+    border: 4px double #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+/* Platzierung des linken Containers */
+
+.left {
+    left: 0;
+}
+
+
+/* Platzierung des rechten Containers */
+
+.right {
+    left: 50%;
+}
+
+
+/* Pfeile auf dem linken Container, die nach rechts zeigen */
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid teal;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent teal;
+}
+
+
+/* Pfeile auf dem rechten Container, die nach links zeigen */
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid teal;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent teal transparent transparent;
+}
+
+
+/* Positionierung des Kreises vom rechten Container */
+
+.right::after {
+    left: -16px;
+}
+
+
+/* Der Content selber */
+
+.content {
+    padding: 20px 30px;
+    background-color: teal;
+    position: relative;
+    border: medium solid teal;
+    border-radius: 6px;
+}
+
+
+/* Effekt beim Hovern über den Content */
+
+.content:hover {
+    transition-duration: 0.4s;
+    background-color: rgb(3, 105, 105);
+    color: black;
+    border: medium solid teal;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* Responsiver Media Query für Bildschirme unter 750px breit */
+
+@media screen and (max-width: 750px) {
+    /* Platziere den Zeitstrahl nach links */
+    .timeline::after {
+        left: 31px;
     }
-    
-    @ -53,11 +62,
-    25 @@ body {}
-    
-    .text {
-        color: white;
-        color: black;
-        font-size: 20px;
-        text-align: center;
+    /* Container mit 100% Breite */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
     }
-    
-    .dmButton {
-        display: flex;
-        background-color: teal;
-        padding: 10px;
-        border: 10px solid teal;
-        border-radius: 10px;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-        margin-top: 10%;
-        margin-left: 100%;
-        ;
+    /* Sicherstellen dass alle Pfeile nach links zeigen */
+    .container::before {
+        left: 60px;
+        border: medium solid teal;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent teal transparent transparent;
     }
-    /* Setzt Grössenlimit für den Zeitstrahl */
-    
-    @ -101,7 +124,
-    7 @@ body {
-        height: 25px;
-        right: -17px;
-        background-color: teal;
-        border: 4px double #FF9F55;
-        border: 4px ridge currentColor;
-        top: 15px;
-        border-radius: 50%;
-        z-index: 1;
+    /* Sicherstellen dass alle Kreise am richtigen Ort sind */
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+    /* Alle rechten Container gleich wie die linken */
+    .right {
+        left: 0%;
+    }
+    .ueberschrift {
+        font-size: 30px;
+    }
+    .textbox {
+        line-height: 15px;
+    }
+    .textbox h2 {
+        font-size: 25px;
+    }
+}
+
+
+/* Generation-Content */
+
+.generation-cont {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.text-Image {
+    size: 50px 50px;
+    border: 12px solid orange;
+}
+
+.generation-text {
+    display: block;
+    color: black;
+    height: max-content;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.btntimeline {
+    padding: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: teal;
+    color: white;
+    height: fit-content;
+    border: 5px solid teal;
+    border-radius: 2em;
+}
+
+.buttonBox {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.ueberschrift {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.ueberschrift:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 20px;
+    border-bottom: 3px solid black;
+}
+
+.textbox {
+    width: 100%;
+    line-height: 40px;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    background-color: teal;
+    border: 12px solid none;
+    border-radius: 1.5em;
+    padding: 20px;
+}
+
+.textbox h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.images {
+    display: flex;
+    height: fit-content;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    border-radius: 2em;
+    justify-content: center;
+}
+
+.realImage {
+    border-radius: 20px;
+}
+
+.documentationBox {
+    height: fit-content;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 10px;
+}
