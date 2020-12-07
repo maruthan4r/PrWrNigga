@@ -3,15 +3,16 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #1a1a1a;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
+#navigation {
+    background-color: rgb(201, 201, 201);
+}
+
 .button {
-    background-color: #1a1a1a;
-    border: 5px solid  #1a1a1a;
-    padding: 33px;
+    background-color: border: 5px solid padding: 33px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -21,7 +22,7 @@ nav {
 
 .button:hover {
     transition-duration: 0.4s;
-    border: 5px solid  teal;
+    border: 5px solid teal;
     background-color: #008080;
     color: #121212;
 }
@@ -58,7 +59,7 @@ nav {
     cursor: pointer;
 }
 
-.burger div{
+.burger div {
     width: 25px;
     height: 3px;
     background-color: teal;
@@ -66,9 +67,11 @@ nav {
     transition: all 0.3s ease;
 }
 
+
 /* Media Queries für mobile Geräte unter Bildschirmbreite von 750px */
-@media screen and (max-width:750px){
-    .links{
+
+@media screen and (max-width:750px) {
+    .links {
         z-index: 100;
         position: absolute;
         right: 0px;
@@ -82,47 +85,53 @@ nav {
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
-
-    .links li{
+    .links li {
         box-sizing: border-box;
         opacity: 0;
     }
-
-    .burger{
+    .burger {
         display: block;
     }
 }
 
-.nav-active{
+.nav-active {
     transform: translateX(0%);
 }
 
+
 /* Animation */
-@keyframes navLinkFade{
-    from{
+
+@keyframes navLinkFade {
+    from {
         opacity: 0;
         transform: translateX(50px);
     }
-    to{
+    to {
         opacity: 1;
         transform: translateX(0px);
     }
 }
 
+
 /* 
 Animation Burger 
 1. Linie dreht sich um -45°
 */
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
 
+
 /* 2. Linie verschwindet */
-.toggle .line2{
+
+.toggle .line2 {
     opacity: 0;
 }
 
+
 /* 3. Linie dreht sich um 45° */
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }

@@ -18,6 +18,15 @@
     font-family: sfbold;
 }
 
+.dark-mode {
+    background-color: #242424;
+    color: white;
+}
+
+.dark-mode p {
+    color: white;
+}
+
 header {
     display: grid;
     position: sticky;
@@ -34,7 +43,7 @@ header {
 }
 
 body {
-    background-color: #242424;
+    background-color: rgb(201, 201, 201);
     font-family: Helvetica, sans-serif;
 }
 
@@ -53,9 +62,23 @@ body {
 }
 
 .text {
-    color: white;
+    color: black;
     font-size: 20px;
     text-align: center;
+}
+
+.dmButton {
+    display: flex;
+    background-color: teal;
+    padding: 10px;
+    border: 10px solid teal;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 10%;
+    margin-left: 100%;
+    ;
 }
 
 
@@ -101,7 +124,7 @@ body {
     height: 25px;
     right: -17px;
     background-color: teal;
-    border: 4px double #FF9F55;
+    border: 4px ridge currentColor;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
