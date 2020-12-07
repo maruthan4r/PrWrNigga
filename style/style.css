@@ -335,10 +335,12 @@ body {
     grid-template-columns: 100%;
 }
 
-.bilder {
+img {
     border: 3px solid teal;
-    padding: 10px;
-    border-radius: 1.5rem;
+}
+
+.bilder {
+    text-align: center;
 }
 
 .realImage {
