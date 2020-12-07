@@ -18,6 +18,11 @@
     font-family: sfbold;
 }
 
+.dark-mode {
+    background-color: #242424;
+    color: white;
+}
+
 header {
     display: grid;
     position: sticky;
@@ -34,7 +39,7 @@ header {
 }
 
 body {
-    background-color: #242424;
+    background-color: white;
     font-family: Helvetica, sans-serif;
 }
 
@@ -101,7 +106,7 @@ body {
     height: 25px;
     right: -17px;
     background-color: teal;
-    border: 4px double #FF9F55;
+    border: 4px ridge currentColor;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -246,6 +251,23 @@ body {
     padding: 10px;
     justify-content: center;
     align-items: center;
+}
+
+.darkmodebutton {
+    background-color: #1a1a1a;
+    color: teal;
+    border: none;
+    padding: 33px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    color: teal;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .hide {
