@@ -9,6 +9,7 @@ nav {
 }
 
 .button {
+    height: 100%;
     background-color: #1a1a1a;
     padding: 33px;
     text-align: center;
@@ -19,6 +20,7 @@ nav {
 }
 
 .button:hover {
+    height: 100%;
     transition-duration: 0.4s;
     border: 5px solid teal;
     background-color: #008080;
@@ -132,4 +134,34 @@ Animation Burger
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.darkmodebutton {
+    background-color: #1a1a1a;
+    color: teal;
+    border: none;
+    padding: 33px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    color: teal;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    border: 5px solid #1a1a1a;
+}
+
+.darkmodebutton:hover {
+    transition-duration: 0.4s;
+    border: 5px solid teal;
+    background-color: #008080;
+    color: #121212;
+}
+
+.dark-mode p {
+    color: white;
 }

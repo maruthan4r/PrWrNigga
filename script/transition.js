@@ -3,7 +3,7 @@ window.onload = () => {
 
     //Get verschiedene HTML-Elemente
     const transitionElement = document.querySelector('.transition');
-    const anchors = document.querySelectorAll('a'); 
+    const anchors = document.querySelectorAll('.transitionbutton'); 
 
     //Entfernt den default Status "is-active", Animation dauert 500ms lang (0.5s)
     setTimeout(() => {

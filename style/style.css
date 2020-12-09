@@ -253,27 +253,6 @@ body {
     align-items: center;
 }
 
-.darkmodebutton {
-    background-color: #1a1a1a;
-    color: teal;
-    border: none;
-    padding: 33px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    cursor: pointer;
-    color: teal;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.dark-mode p {
-    color: white;
-}
-
 .hide {
     display: none;
 }
