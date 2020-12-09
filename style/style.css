@@ -233,8 +233,8 @@ body {
 /* Generation-Content */
 
 .generation-cont {
-    display: flex;
-    justify-content: stretch;
+    display: block;
+    justify-content: center;
     align-items: center;
     padding-top: 100px;
 }
@@ -290,11 +290,13 @@ body {
 }
 
 .textbox {
-    width: 100%;
+    align-self: center;
+    margin-right: 10%;
+    margin-left: 10%;
     line-height: 40px;
     align-items: center;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     background-color: teal;
     border: 12px solid none;
     border-radius: 1.5em;
@@ -304,9 +306,11 @@ body {
 .textbox h2 {
     padding-top: 30px;
     padding-bottom: 30px;
+    font-size: 40px;
 }
 
 .bilder {
+    margin: 40px;
     text-align: center;
 }
 
@@ -318,6 +322,12 @@ body {
 }
 
 .bildbeschreibung {
-    font-size: 20px;
-    padding-top: 10px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+    .textbox {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
