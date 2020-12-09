@@ -327,32 +327,18 @@ body {
     padding-bottom: 30px;
 }
 
-.images {
-    display: grid;
-    align-content: space-around;
-    justify-items: center;
-    padding-left: 200px;
-    grid-template-columns: 100%;
-}
-
 .bilder {
     text-align: center;
 }
 
 .realImage {
-    border: 3px solid teal;
-    border-radius: 20px;
+    border: 6px solid black;
+    border-radius: 10px;
+    width: 30%;
+    height: 30%;
 }
 
-.documentationBox {
-    height: fit-content;
-    width: fit-content;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    padding: 10px;
-}
-
-.bildertext {
+.bildbeschreibung {
     font-size: 20px;
     padding-top: 10px;
 }
