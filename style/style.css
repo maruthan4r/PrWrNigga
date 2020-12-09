@@ -41,6 +41,7 @@ header {
 body {
     background-color: rgb(187, 221, 221);
     font-family: Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 #zeitstrahl {

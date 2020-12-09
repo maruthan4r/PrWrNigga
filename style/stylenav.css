@@ -71,7 +71,7 @@ nav {
 
 /* Media Queries für mobile Geräte unter Bildschirmbreite von 750px */
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:750px) {
     .links {
         z-index: 100;
         position: absolute;
