@@ -30,7 +30,6 @@ function jumpTimeLine(){
     //Scrollt zur Position des Zeitstrahls
     window.scrollTo({
         top: 0,
-        left: 1300,
         behavior: 'smooth'
     });
 }
