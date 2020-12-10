@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style/transition.css">
     <link rel="stylesheet" href="style/stylenav.css">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Computer</title>
     <script defer src="script/transition.js"></script>
     <script defer src="script/navbar.js"></script>
