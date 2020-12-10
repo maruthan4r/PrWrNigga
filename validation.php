@@ -12,8 +12,9 @@
     <script defer src="script/navbar.js"></script>
     <title>Formular</title>
 </head>
+<div class="wrapper">
 <body>
-    <div class="wrapper">
+    
 <header>
         <nav>
             <div class="logo">
@@ -70,6 +71,7 @@ if (isset($_GET['name'])){
 
 echo "<p class='responseText'>$name</p>";
 ?></div>
-</div>
+
 </body>
+</div>
 </html>
