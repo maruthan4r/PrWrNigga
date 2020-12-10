@@ -35,6 +35,9 @@
                 <li>
                     <a href="form.php" class="button">Kontakt</a>
                 </li>
+                <li>
+                    <a class="button" onclick="darkmode()">DARKMODE</a>
+                </li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -87,6 +90,15 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function darkmode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            document.getElementsByTagName("nav").classList.toggle("dark-mode");
+            document.getElementsByclassName("text").classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 
 </html>
