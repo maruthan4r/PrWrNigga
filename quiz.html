@@ -46,57 +46,62 @@
             </div>
         </nav>
     </header>
-    <div class="einleitung" id="einleit">
-        <h1 class="einleittitel">Quiz</h1>
-        <p>Teste dein Wissen über die Geschichte des Modernen Computers in diesem Quiz!</p>
-    </div>
-    <div class="resulttext">
-        <div class="correct-result res hidden" id="correct">Richtig!</div>
-        <div class="wrong-result res hidden" id="wrong">Falsch</div>
-    </div>
-    <div class="quiz">
-        <div class="container">
-            <div id="question-container" class="hide">
-                <div id="question">Question</div>
-                <div id="answer-buttons" class="btn-grid">
-                    <button class="btn">Answer1</button>
-                    <button class="btn">Answer2</button>
-                    <button class="btn">Answer3</button>
-                    <button class="btn">Answer4</button>
+    <div id="quizbox" class="LightLayout">
+        <div class="einleitung" id="einleit">
+            <h1 class="einleittitel">Quiz</h1>
+            <p>Teste dein Wissen über die Geschichte des Modernen Computers in diesem Quiz!</p>
+        </div>
+        <div class="resulttext">
+            <div class="correct-result res hidden" id="correct">Richtig!</div>
+            <div class="wrong-result res hidden" id="wrong">Falsch</div>
+        </div>
+        <div class="quiz">
+            <div class="container">
+                <div id="question-container" class="hide">
+                    <div id="question">Question</div>
+                    <div id="answer-buttons" class="btn-grid">
+                        <button class="btn">Answer1</button>
+                        <button class="btn">Answer2</button>
+                        <button class="btn">Answer3</button>
+                        <button class="btn">Answer4</button>
+                    </div>
                 </div>
-            </div>
-            <div class="controls">
-                <button id="start-btn" class="start-btn btn">Start</button>
-                <button id="next-btn" class="next-btn btn hide">Next</button>
-            </div>
-            <div id="result" class="hide">
-                <h1>Quiz Result</h1>
-                <table>
-                    <tr>
-                        <td>Anzahl Versuche</td>
-                        <td><span id="total-attempts">0</span></td>
-                    </tr>
-                    <tr>
-                        <td>Anzahl Fragen</td>
-                        <td><span id="total-question">0</span></td>
-                    </tr>
-                    <tr>
-                        <td>Richtige Fragen</td>
-                        <td><span id="total-correct">0</span></td>
-                    </tr>
-                </table>
-                <button id="again-btn" class="again-btn btn">Try Again</button>
-                <button id="home-btn" class="home-btn btn">Go To Home</button>
+                <div class="controls">
+                    <button id="start-btn" class="start-btn btn">Start</button>
+                    <button id="next-btn" class="next-btn btn hide">Next</button>
+                </div>
+                <div id="result" class="hide">
+                    <h1>Quiz Result</h1>
+                    <table>
+                        <tr>
+                            <td>Anzahl Versuche</td>
+                            <td><span id="total-attempts">0</span></td>
+                        </tr>
+                        <tr>
+                            <td>Anzahl Fragen</td>
+                            <td><span id="total-question">0</span></td>
+                        </tr>
+                        <tr>
+                            <td>Richtige Fragen</td>
+                            <td><span id="total-correct">0</span></td>
+                        </tr>
+                    </table>
+                    <button id="again-btn" class="again-btn btn">Try Again</button>
+                    <button id="home-btn" class="home-btn btn">Go To Home</button>
+                </div>
             </div>
         </div>
     </div>
-
     <script>
         function darkmode() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-            document.getElementsByTagName("nav").classList.toggle("dark-mode");
-            document.getElementsByclassName("text").classList.toggle("dark-mode");
+            var body = document.body;
+            body.classList.toggle("darkmode");
+            var element = document.getElementById("quizbox");
+            element.classList.remove("LightLayout");
+            element.classList.add("DarkLayout");
+
+
+
         }
     </script>
 </body>
