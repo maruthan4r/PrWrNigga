@@ -54,6 +54,21 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 echo "Connected successfully";
+
+
+$sql = "SELECT model, Jahr FROM computers";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<br> id: ". $row["model"]. " - Jahr: ". $row["Jahr"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+
+$conn->close()
 ?>
 </div>
 
