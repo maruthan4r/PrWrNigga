@@ -19,7 +19,6 @@ function redirect(ident){
     //Scrollt zur Position des Contents
     window.scrollTo({
         top: 1000,
-        left: 1300,
         behavior: 'smooth'
     });
 }

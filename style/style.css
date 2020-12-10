@@ -369,6 +369,10 @@ td.footer {
         margin-right: 0;
     }
 
+    .textbox p {
+        font-size: 15px;
+    }
+
     .realImage {
         width: 90%;
         height: 90%;
