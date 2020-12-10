@@ -13,6 +13,7 @@
     <script defer src="script/timeline.js"></script>
 </head>
 <body>
+    <div class="wrapper">
 <header>
         <nav>
             <div class="logo">
@@ -82,5 +83,6 @@ $conn->close()
             document.getElementsByclassName("text").classList.toggle("dark-mode");
         }
     </script>
+    </div>
 </body>
 </html>

@@ -12,7 +12,7 @@
     <script defer src="script/navbar.js"></script>
     <title>Formular</title>
 </head>
-
+<div class="wrapper">
 <div class="transition transition-2 is-active">
     <div class="loadinggif">
         <h4><img src="img/loading.gif" alt="loading" width="100" height="100"></h4>
@@ -76,4 +76,5 @@
             document.getElementsByclassName("text").classList.toggle("dark-mode");
         }
     </script>
+</div>
 </html>

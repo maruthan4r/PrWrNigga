@@ -13,6 +13,7 @@
     <title>Formular</title>
 </head>
 <body>
+    <div class="wrapper">
 <header>
         <nav>
             <div class="logo">
@@ -69,6 +70,6 @@ if (isset($_GET['name'])){
 
 echo "<p class='responseText'>$name</p>";
 ?></div>
-
+</div>
 </body>
 </html>
