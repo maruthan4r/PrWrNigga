@@ -1,5 +1,5 @@
 //Übergang wird ausgeführt wenn das Fenster geladen wird
-window.onload = () => {
+document.addEventListener("DOMContentLoaded", function() {
 
     //Get verschiedene HTML-Elemente
     const transitionElement = document.querySelector('.transition');
@@ -32,4 +32,5 @@ window.onload = () => {
             }, 500);
         });
     }
-}
+});
+
