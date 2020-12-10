@@ -94,14 +94,10 @@
     </div>
     <script>
         function darkmode() {
-            var body = document.body;
-            body.classList.toggle("darkmode");
-            var element = document.getElementById("quizbox");
-            element.classList.remove("LightLayout");
-            element.classList.add("DarkLayout");
-
-
-
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            document.getElementById("quizbox").classList.toggle("dark-mode");
+            document.getElementsByclassName("text").classList.toggle("dark-mode");
         }
     </script>
 </body>

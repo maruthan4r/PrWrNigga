@@ -20,7 +20,7 @@
 }
 
 body {
-    background-color: #242424;
+    background-color: rgb(187, 221, 221);
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -226,6 +226,7 @@ h1 {
     }
 }
 
+/**
 div.darkLayout {
     background-color: #242424;
     padding: 10px;
@@ -233,4 +234,8 @@ div.darkLayout {
 
 div.LightLayout {
     background-color: #cccccc;
+}
+*/
+.dark-mode {
+    background-color: #242424;
 }
