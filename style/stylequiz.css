@@ -26,6 +26,7 @@ body {
     font-size: 16px;
     font-family: sfbold, sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 .loadinggif {
@@ -226,16 +227,6 @@ h1 {
     }
 }
 
-/**
-div.darkLayout {
-    background-color: #242424;
-    padding: 10px;
-}
-
-div.LightLayout {
-    background-color: #cccccc;
-}
-*/
 .dark-mode {
     background-color: #242424;
 }

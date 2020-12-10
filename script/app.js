@@ -186,7 +186,7 @@ const questions = [
         answers: [
             { text: 'Steve Jobs', correct: false },
             { text: 'Elon Musk', correct: false },
-            { text: 'Barack Obama', correct: false },
+            { text: 'Alan Turing', correct: false },
             { text: 'Konrad Zuse', correct: true }
         ]
     },
@@ -195,7 +195,7 @@ const questions = [
         answers: [
             { text: 'Z1', correct: false },
             { text: 'Z2', correct: false },
-            { text: 'Barack Obama', correct: false },
+            { text: 'Z3', correct: false },
             { text: 'Z4', correct: true }
         ]
     },
@@ -205,15 +205,15 @@ const questions = [
             { text: 'Transistoren', correct: true },
             { text: 'Kartoffeln', correct: false },
             { text: 'Batterien', correct: false },
-            { text: 'Barack Obama', correct: false }
+            { text: 'Elektrorenröhren', correct: false }
         ]
     },
     {
-        question: "Wer baute ERMETH, den ersten europäischen Computer?",
+        question: "Wer baute ERMETH, einen der ersten europäischen Computer?",
         answers: [
             { text: 'Max-Planck-Institut', correct: false },
             { text: 'ETH Zürich', correct: true },
-            { text: 'Barack Obama', correct: false },
+            { text: 'University of Cambridge', correct: false },
             { text: 'University of Oxford', correct: false }
         ]
     },
@@ -221,16 +221,16 @@ const questions = [
         question: "Welches System wurde eingeführt, um verschiedene Computer kompatibel zu machen?",
         answers: [
             { text: 'System/180', correct: false },
-            { text: 'Barack Obama', correct: false },
+            { text: 'SystemNew', correct: false },
             { text: 'System/360', correct: true },
-            { text: 'System/69', correct: false }
+            { text: 'SystemIBM', correct: false }
         ]
     },
     {
         question: "Was bedeutet ursprünglich die Abkürzung 'HP'?",
         answers: [
             { text: 'Hewlett-Piccard', correct: false },
-            { text: 'Barack Obama', correct: false },
+            { text: 'Howard-Packard', correct: false },
             { text: 'Howard-Piccard', correct: false },
             { text: 'Hewlett-Packard', correct: true }
         ]
@@ -238,7 +238,7 @@ const questions = [
     {
         question: "Mit was wurde der Supercomputer 'Illiac IV' bestückt?",
         answers: [
-            { text: 'Barack-Obama', correct: false },
+            { text: 'Lithium-Kabel', correct: false },
             { text: 'Array-Prozessoren', correct: true },
             { text: 'Transistoren', correct: false },
             { text: 'Batterien', correct: false }
@@ -248,15 +248,15 @@ const questions = [
         question: "Wer erstellte den ersten Personal Computer (PC)?",
         answers: [
             { text: 'Apple Computer', correct: true },
-            { text: 'Barack Obama', correct: false },
+            { text: 'IBM', correct: false },
             { text: 'Steve Wozniak', correct: true },
             { text: 'HP', correct: false }
         ]
     },
     {
-        question: "Was war hatte der 'Apple Macintosh', was zu der Zeit speziell war?",
+        question: "Was hatte der 'Apple Macintosh', was zu der Zeit speziell war?",
         answers: [
-            { text: 'Barack Obama', correct: false },
+            { text: 'Lenkrad', correct: false },
             { text: 'Maus', correct: true },
             { text: 'Ventilator', correct: false },
             { text: 'Mikrowelle', correct: false }
@@ -268,13 +268,13 @@ const questions = [
             { text: 'ein weltweites Netzwerk', correct: true },
             { text: 'eine Organisation', correct: false },
             { text: 'ein Betriebssysten', correct: false },
-            { text: 'Barack Obama', correct: false }
+            { text: 'Ein benutzbares Netz', correct: false }
         ]
     },
     {
         question: "Was war die erste registrierte Domain des Internets?",
         answers: [
-            { text: 'barack-obama.net', correct: false },
+            { text: 'bing.com', correct: false },
             { text: 'google.com', correct: false },
             { text: 'nordu.net', correct: true },
             { text: 'wikipedia.org', correct: false }
@@ -283,9 +283,9 @@ const questions = [
     {
         question: "Warum waren die Intel Pentium Prozessoren kein wirtschaftlicher Erfolg?",
         answers: [
-            { text: 'Barack Obama verbot den Verkauf', correct: false },
+            { text: 'Sie waren zu schwer', correct: false },
             { text: 'zu teuer', correct: true },
-            { text: 'sie gingen schnell kaputt', correct: false },
+            { text: 'Sie gingen schnell kaputt', correct: false },
             { text: 'Konkurrenz war besser', correct: true }
         ]
     },
@@ -293,7 +293,7 @@ const questions = [
         question: "Wer brachte den ersten 64-Bit-Prozessor auf den Markt?",
         answers: [
             { text: 'HP', correct: false },
-            { text: 'Barack Obama', correct: false },
+            { text: 'AMD', correct: false },
             { text: 'Apple', correct: true },
             { text: 'Intel', correct: false }
         ]
