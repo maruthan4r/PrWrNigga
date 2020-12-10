@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" type="text/css" href="style/transition.css">
-    <link rel="stylesheet" href="style/stylenav.css">
+    <link rel="stylesheet" href="style/styleform.css">
+    <link rel="stylesheet" type="text/css" href="style/stylenav.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Computer</title>
     <script defer src="script/transition.js"></script>
     <script defer src="script/navbar.js"></script>
-    <script defer src="script/timeline.js"></script>
+    <title>Formular</title>
 </head>
 <div class="wrapper">
 <body>
- 
+    
 <header>
         <nav>
             <div class="logo">
@@ -24,16 +24,16 @@
                 <h4 class="logo">Geschichte des modernen Computers</h4>
             </div>
             <ul class="links">
-                <li>
-                    <a href="quiz.html" class="button transitionbutton">Quiz</a>
-                </li>
-                <li>
-                    <a href="form.php" class="button transitionbutton">Kontakt</a>
-                </li>
-                <li>
-                    <a class="button" onclick="darkmode()">DARKMODE</a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="quiz.html" class="button transitionbutton">Quiz</a>
+                    </li>
+                    <li>
+                        <a href="form.php" class="button transitionbutton">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="list.php" class="button transitionbutton">Uebersicht</a>
+                    </li>
+                </ul>
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -78,15 +78,10 @@ $conn->close()
 
 
     <script>
-        var cnt = 0;
         function darkmode() {
-
-            if cnt%2==0||cnt==0{
             var element = document.body;
             element.classList.toggle("dark-mode");
-            document.getElementsByclassName("text").classList.toggle("dark-mode");
-            cnt++;
-        }
+
     }
     </script>
     
