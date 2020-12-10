@@ -44,6 +44,35 @@ body {
     overflow-x: hidden;
 }
 
+footer.footer {
+    display: flex;
+    background-color: teal;
+    padding: 20px;
+}
+
+table.footer {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 100%;
+}
+
+td.footer {
+    text-align: center;
+    margin: 10px;
+}
+
+table,
+th,
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+td.footer {
+    border: 1px solid none;
+}
+
 #zeitstrahl {
     display: flex;
     justify-content: center;
@@ -271,7 +300,7 @@ body {
     border-radius: 2em;
 }
 
-.btntimeline:hover{
+.btntimeline:hover {
     transition-duration: 0.4s;
     border: 3px solid #242424;
     background-color: rgb(6, 153, 153);
