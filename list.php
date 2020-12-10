@@ -78,11 +78,16 @@ $conn->close()
 
 
     <script>
+        var cnt = 0;
         function darkmode() {
+
+            if cnt%2==0||cnt==0{
             var element = document.body;
             element.classList.toggle("dark-mode");
             document.getElementsByclassName("text").classList.toggle("dark-mode");
+            cnt++;
         }
+    }
     </script>
     
 </body>
