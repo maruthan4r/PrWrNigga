@@ -378,3 +378,19 @@ td.footer {
         height: 90%;
     }
 }
+
+th{
+    font-size: 20px;
+}
+
+th:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    border-bottom: 3px solid black;
+}
+
+tr {
+    height: 30px;
+}
