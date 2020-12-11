@@ -298,6 +298,7 @@ td.footer {
     height: fit-content;
     border: 5px solid teal;
     border-radius: 2em;
+    margin: 5px;
 }
 
 .btntimeline:hover {
