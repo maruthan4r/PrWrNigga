@@ -4,6 +4,10 @@
     width: 100vw;
 }
 
+.wrapper #speziell {
+    height: 100vh;
+}
+
 header {
     display: grid;
     position: sticky;
@@ -178,6 +182,3 @@ Animation Burger
     color: white;
 }
 
-.validation {
-    height: 100vh;
-}
