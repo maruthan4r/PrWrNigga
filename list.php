@@ -30,7 +30,7 @@
             <li>
                 <a class="button" onClick="document.location.href='quiz.html'">Quiz</a>
             </li>
-            
+
                 </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -45,7 +45,7 @@
 <?php
 $servername = "localhost";
 $username = "pchistory";
-$password = "Thanabal44";
+$password = "62umhh0snYY{#Y-s";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password,'computers_main');
