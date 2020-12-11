@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="validation">
 
 <head>
     <link rel="stylesheet" href="style/style.css">
@@ -13,7 +13,7 @@
     <title>Formular</title>
 </head>
 <div class="wrapper">
-<body class="validation">
+<body>
     
 <header>
         <nav>
