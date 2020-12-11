@@ -39,7 +39,7 @@ header {
 }
 
 body {
-    background-color: rgb(187, 221, 221);
+    background-color: #242424;
     font-family: Helvetica, sans-serif;
     overflow-x: hidden;
 }
@@ -88,7 +88,7 @@ td.footer {
 }
 
 .text {
-    color: black;
+    color: white;
     font-size: 20px;
     text-align: center;
 }
@@ -368,11 +368,9 @@ td.footer {
         margin-left: 0;
         margin-right: 0;
     }
-
     .textbox p {
         font-size: 15px;
     }
-
     .realImage {
         width: 90%;
         height: 90%;
