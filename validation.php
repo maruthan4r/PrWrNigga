@@ -7,14 +7,11 @@
     <link rel="stylesheet" href="style/styleform.css">
     <link rel="stylesheet" type="text/css" href="style/stylenav.css">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <script defer src="script/transition.js"></script>
     <script defer src="script/navbar.js"></script>
     <title>Formular</title>
 </head>
-<div class="wrapper">
 <body>
-    
 <header>
         <nav>
             <div class="logo">
@@ -73,5 +70,4 @@ echo "<p class='responseText'>$name</p>";
 ?></div>
 
 </body>
-</div>
 </html>
