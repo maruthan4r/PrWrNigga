@@ -29,14 +29,11 @@
         </div>
         <ul class="links">
             <li>
-                <a href="index.html" class="button" id="home">HOME</a>
+                <a href="index.html" class="button" id="home">Home</a>
             </li>
             <li>
                 <a href="quiz.html" class="button">Quiz</a>
             </li>
-            <li>
-                    <a class="button" onclick="darkmode()">DARKMODE</a>
-                </li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -68,13 +65,5 @@
 
 </div>
 
-<script>
-        function darkmode() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-            document.getElementsByTagName("nav").classList.toggle("dark-mode");
-            document.getElementsByclassName("text").classList.toggle("dark-mode");
-        }
-    </script>
 </div>
 </html>
