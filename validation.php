@@ -44,8 +44,8 @@
 
 <div class="response">
     <?php
-
-    $message = 'Absender: '.$_GET['mail']."Nachricht: ".$_GET['message'];
+    $sender=$_GET['mail'];
+    $message = 'Absender: '.$_GET['mail']."<br>Nachricht: <br>".$_GET['message'];
 
 require_once('PHPMailer/PHPMailerAutoload.php');
 
@@ -64,8 +64,7 @@ $mail->SetFrom('no-reply@howcode.org');
 $mail->Subject = 'Kontaktformular';
 $mail->Body = $message;
 $mail->AddAddress('maruthan@outlook.com');
-
-$mail->send();
+$mail->AddAddress($sender);
 
 if (isset($_GET['name'])){
     if($mail->send()){
