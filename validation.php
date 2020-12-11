@@ -28,7 +28,7 @@
                         <a href="quiz.html" class="button transitionbutton">Quiz</a>
                     </li>
                     <li>
-                        <a href="form.php" class="button transitionbutton">Kontakt</a>
+                        <a href="index.html" class="button transitionbutton">Home</a>
                     </li>
                     <li>
                         <a href="list.php" class="button transitionbutton">Uebersicht</a>

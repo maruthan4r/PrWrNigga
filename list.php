@@ -31,7 +31,7 @@
                         <a href="form.php" class="button transitionbutton">Kontakt</a>
                     </li>
                     <li>
-                        <a href="list.php" class="button transitionbutton">Uebersicht</a>
+                        <a href="index.html" class="button transitionbutton">Home</a>
                     </li>
                 </ul>
             <div class="burger">
@@ -73,18 +73,7 @@ if ($result->num_rows > 0) {
 
 $conn->close()
 ?>
-</div>
-
-
-
-    <script>
-        function darkmode() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-
-    }
-    </script>
-    
+</div>    
 </body>
 </div>
 </html>
