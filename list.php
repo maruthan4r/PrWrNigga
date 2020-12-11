@@ -44,11 +44,11 @@
 
 <?php
 $servername = "localhost";
-$username = "pchistory";
+$username = "id15521113_pchistory";
 $password = "62umhh0snYY{#Y-s";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password,'computers_main');
+$conn = new mysqli($servername, $username, $password,'id15521113_main');
 
 // Check connection
 if ($conn->connect_error) {
