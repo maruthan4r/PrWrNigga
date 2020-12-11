@@ -89,6 +89,7 @@ textarea:focus {
 
 p.responseText {
     font-weight: bolder;
+    height: 100vh;
 }
 
 @media screen and (max-width: 750px) {

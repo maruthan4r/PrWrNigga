@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="validation">
+<html>
 
 <head>
     <link rel="stylesheet" href="style/style.css">
@@ -12,7 +12,7 @@
     <script defer src="script/navbar.js"></script>
     <title>Formular</title>
 </head>
-<div class="wrapper" id="speziell">
+<div class="wrapper">
 <body>
     
 <header>
@@ -24,16 +24,10 @@
                 <h4 class="logo">Geschichte des modernen Computers</h4>
             </div>
             <ul class="links">
-            <li>
-                <a onClick="document.location.href='index.html'" class="button" id="home">Home</a>
-            </li>
-            <li>
-                <a class="button" onClick="document.location.href='quiz.html'">Quiz</a>
-            </li>
-            <li>
-                <a class="button" onClick="document.location.href='list.php'">Uebersicht</a>
-            </li>
-        </ul>
+                <li>
+                    <a href="index.html" class="button" id="home">Home</a>
+                </li>
+            </ul>
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -44,8 +38,8 @@
 
 <div class="response">
     <?php
-    $sender=$_GET['mail'];
-    $message = 'Absender: '.$_GET['mail']."<br>Nachricht: <br>".$_GET['message'];
+
+    $message = 'Absender: '.$_GET['mail']."Nachricht: ".$_GET['message'];
 
 require_once('PHPMailer/PHPMailerAutoload.php');
 
@@ -64,7 +58,8 @@ $mail->SetFrom('no-reply@howcode.org');
 $mail->Subject = 'Kontaktformular';
 $mail->Body = $message;
 $mail->AddAddress('maruthan@outlook.com');
-$mail->AddAddress($sender);
+
+$mail->send();
 
 if (isset($_GET['name'])){
     if($mail->send()){

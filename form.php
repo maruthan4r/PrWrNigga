@@ -55,7 +55,7 @@
     <form class="form" action="validation.php" method="GET">
 
         <p class="form">Ihr name:</p>
-        <p class="form"><input class="form" type="text" name="name"></p>
+        <p class="form"><input class="form" type="text" name="name" required="required"></p>
 
         <p class="form">Ihre E-Mail:</p>
         <p class="form"><input class="form" type="email" name="mail" required="required"></p>
