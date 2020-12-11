@@ -24,15 +24,13 @@
                 <h4 class="logo">Geschichte des modernen Computers</h4>
             </div>
             <ul class="links">
-                    <li>
-                        <a href="quiz.html" class="button transitionbutton">Quiz</a>
-                    </li>
-                    <li>
-                        <a href="form.php" class="button transitionbutton">Kontakt</a>
-                    </li>
-                    <li>
-                        <a href="index.html" class="button transitionbutton">Home</a>
-                    </li>
+            <li>
+                <a onClick="document.location.href='index.html'" class="button" id="home">Home</a>
+            </li>
+            <li>
+                <a class="button" onClick="document.location.href='quiz.html'">Quiz</a>
+            </li>
+            
                 </ul>
             <div class="burger">
                 <div class="line1"></div>

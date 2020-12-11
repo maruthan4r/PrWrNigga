@@ -29,10 +29,13 @@
         </div>
         <ul class="links">
             <li>
-                <a href="index.html" class="button" id="home">Home</a>
+                <a onClick="document.location.href='index.html'" class="button" id="home">Home</a>
             </li>
             <li>
-                <a href="quiz.html" class="button">Quiz</a>
+                <a class="button" onClick="document.location.href='quiz.html'">Quiz</a>
+            </li>
+            <li>
+                <a class="button" onClick="document.location.href='list.php'">Uebersicht</a>
             </li>
         </ul>
         <div class="burger">
