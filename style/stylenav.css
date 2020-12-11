@@ -177,3 +177,7 @@ Animation Burger
 .dark-mode p {
     color: white;
 }
+
+.validation {
+    height: 100vh;
+}

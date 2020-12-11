@@ -13,7 +13,7 @@
     <title>Formular</title>
 </head>
 <div class="wrapper">
-<body>
+<body class="validation">
     
 <header>
         <nav>
