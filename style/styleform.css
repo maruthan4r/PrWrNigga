@@ -91,4 +91,13 @@ p.responseText {
     font-weight: bolder;
 }
 
-@media screen and (max-width: 750px) {}
+@media screen and (max-width: 750px) {
+    textarea.messageBox {
+        border-radius: 10px;
+        outline: none;
+        border: 3px solid white;
+        padding: 10px;
+        height: 20em;
+        width: 95%;
+    }
+}

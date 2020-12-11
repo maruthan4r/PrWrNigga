@@ -30,7 +30,7 @@
             <li>
                 <a class="button" onClick="document.location.href='quiz.html'">Quiz</a>
             </li>
-            
+
                 </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -44,11 +44,11 @@
 
 <?php
 $servername = "localhost";
-$username = "pchistory";
-$password = "Thanabal44";
+$username = "id15521113_pchistory";
+$password = "62umhh0snYY{#Y-s";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password,'computers_main');
+$conn = new mysqli($servername, $username, $password,'id15521113_main');
 
 // Check connection
 if ($conn->connect_error) {
