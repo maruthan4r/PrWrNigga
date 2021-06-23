@@ -1,6 +1,6 @@
 @font-face {
     font-family: sfbold;
-    src: url(fonts/sfbold.otf) format("opentype");
+    src: url(fonts/sfbold.ttf) format("truetypr");
 }
 
 
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: sfregular;
-    src: url(fonts/sfregular.otf) format("opentype");
+    src: url(fonts/sfregular.ttf) format("truetype");
 }
 
 * {
