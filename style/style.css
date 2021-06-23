@@ -15,7 +15,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sfbold;
+    font-family: sfbold,Helvetica;
 }
 
 .dark-mode {
